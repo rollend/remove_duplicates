@@ -96,6 +96,7 @@ def remove_duplicates(rootdir):
         num_total.append(len(allLine))
         print(input_file[line]+","+str(len(allLine))+","+str(len(allLine)-len(h)))
         wFile.close()
+        os.remove(input_file[line])
     with open(logname, 'w') as logfile:
         logfile.write(results)
     for value in num:
