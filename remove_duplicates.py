@@ -83,7 +83,7 @@ def remove_duplicates(rootdir):
     total_instances=0
     for line in input_file:
         rFile = open(input_file[line], "r")
-        wFile = open(yourpath+"_cleaned/"+rFile.name.strip(yourpath)+'csv', "w")
+        wFile = open(yourpath+"_cleaned"+rFile.name.replace(yourpath,''), "w")
         allLine = rFile.readlines()
         rFile.close()
         h = {}
@@ -96,7 +96,7 @@ def remove_duplicates(rootdir):
         num_total.append(len(allLine))
         print(input_file[line]+","+str(len(allLine))+","+str(len(allLine)-len(h)))
         wFile.close()
-        os.remove(input_file[line])
+        #os.remove(input_file[line])
     with open(logname, 'w') as logfile:
         logfile.write(results)
     for value in num:
