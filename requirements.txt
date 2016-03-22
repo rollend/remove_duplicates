@@ -1,0 +1,6 @@
+pymysql
+requests
+Matplotlib
+OpenCV
+pandas
+scikits-learn
