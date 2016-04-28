@@ -2,7 +2,7 @@
 """
 Created on Mon Mar 21 13:25:57 2016
 
-@author: Shen.Xu
+@author: Dr. Shen.Xu
 
 This script use dict key to find duplicate contents within csv file, 
 create a new file to store non-duplicate contents (no infect on contents order and file name). 
@@ -12,7 +12,7 @@ Approximate run time:  5.0GB about 4 mintues
 Reminder: Leave enough spaces, log file stored in new root folder 
 """
 import os
-import pickle
+#import pickle
 import functools
 #import tkinter
 #import tkinter.filedialog
